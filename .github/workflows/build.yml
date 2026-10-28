@@ -1,8 +1,7 @@
-YAML
 
 name: Build NeoTV Launcher APK
 
-on:
+"on":
   workflow_dispatch:
 
 jobs:
@@ -16,7 +15,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: "17"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
